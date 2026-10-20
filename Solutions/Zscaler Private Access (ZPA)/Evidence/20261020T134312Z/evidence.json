@@ -1,0 +1,494 @@
+{
+  "baselineDecision": {
+    "availability": "unsupported"
+  },
+  "exportedAt": "2026-10-20T14:36:18.326540+00:00",
+  "exporter": {
+    "command": [
+      "sentinel-xdr-migration",
+      "export-evidence",
+      "--solution",
+      ".",
+      "--run-id",
+      "20261020T134312Z"
+    ],
+    "name": "sentinel-xdr-migration",
+    "pythonVersion": "3.12.12",
+    "version": "0.1.0"
+  },
+  "historicalCommands": {
+    "availability": "unsupported"
+  },
+  "historicalToolVersions": {
+    "availability": "unsupported"
+  },
+  "profile": "authoring",
+  "recordedWorkflowStatus": "inProgress",
+  "reports": {
+    "alertParity": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/alert-parity-report.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    },
+    "conversion": {
+      "availability": "available",
+      "counts": {
+        "conflicts": 0,
+        "converted": 10,
+        "deploymentReady": 10,
+        "excluded": 0,
+        "needsReview": 0,
+        "reviewRequired": 0,
+        "total": 10
+      },
+      "items": [
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 0,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerSharedZPASession.yaml",
+            "sha256": "8ba576a40d70ea61c937528ea00628e1a34fe27781512942ca88898c6f2c50f2"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerSharedZPASession.yaml",
+            "sha256": "6625ff88d08a0de913dbe92ad72b4d1ecca56921457b8ca25eb7bf890e845e03"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 1,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerUnexpectedCountEventResult.yaml",
+            "sha256": "7c9738f77c8c54f8072cf34fc31a197c567ada96cb418969bb9f62b84ed8b197"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerUnexpectedCountEventResult.yaml",
+            "sha256": "0200332c38ae1ade11446964d2c4204642852a1d58c82b370893d59bd3d8d653"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 2,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerUnexpectedCountries.yaml",
+            "sha256": "75e277e534518750035b2befc2a271dbe017330f5c1c553f0398c79c985e3113"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerUnexpectedCountries.yaml",
+            "sha256": "6e64c6f4e7f01f93e72349ceb95a1d6080ddabc9ec93121b493dfa8718567987"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 3,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerUnexpectedUpdateOperation.yaml",
+            "sha256": "155dd1df7c3e70938ee571fda45d37ce615b15dadf7e1e468a74fad511f95c6f"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerUnexpectedUpdateOperation.yaml",
+            "sha256": "341c243a439cf10a5accdf75de4040b35994dfbce49f0d0349c2161ea7e0a172"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 4,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerZPAConnectionsByDormantUser.yaml",
+            "sha256": "0bae0c8eed4d0878d1f04ad80db93113daf5c5bf99d2525fcff2c2e0abd957e2"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerZPAConnectionsByDormantUser.yaml",
+            "sha256": "60c3b11bb6231d57263bf2e8e7df47b05aad246b9032e89317fe2d995bc00ce4"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 5,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerZPAConnectionsByNewUser.yaml",
+            "sha256": "b139193fd3d91a3db96ee0470accd1ea1a90f148d7ec73e854dfa246fa30e883"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerZPAConnectionsByNewUser.yaml",
+            "sha256": "5ced33d17cc239efc2a4886a7bde9999f5d7c2a7b1c2a477a5d145a4c5de417b"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 6,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerZPAConnectionsFromNewCountry.yaml",
+            "sha256": "d6ba8b6b1953a81e0c0f060b40a0b73ea0202eecb8344b33988b5bbc439b0a96"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerZPAConnectionsFromNewCountry.yaml",
+            "sha256": "518573a01c0c439b7fe3cdad603804f585f34cb2685bb4896b52e4b742a1219d"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 7,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerZPAConnectionsFromNewIP.yaml",
+            "sha256": "47ab71abbb6648f5ade39a222dadb1beb96f3d9c0f73636da8a03fa79d64d25e"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerZPAConnectionsFromNewIP.yaml",
+            "sha256": "3764a7ada4818ad74ef534f266a0182d862fea5b36de3a84c725a3ebcb419fca"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 8,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerZPAConnectionsOutsideOperationalHours.yaml",
+            "sha256": "c8189b174016a3f0e43acb4e60d88687cfe2e09780fe3a9023864ef8d0fd37e7"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.2"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerZPAConnectionsOutsideOperationalHours.yaml",
+            "sha256": "156a7d1260de69a1e236f38e4030b189aabc6fd631c1328312ddea2c9ee9b9e8"
+          }
+        },
+        {
+          "errorCount": 0,
+          "errorDetails": "not-recorded",
+          "index": 9,
+          "output": {
+            "availability": "available",
+            "path": "XDR Detections/ZscalerZPAUnexpectedSessionDuration.yaml",
+            "sha256": "9f408682eb8155f54abdf3f32a7ad7098bdb7a8881dc3ad46af44f6e33581ba6"
+          },
+          "provenance": {
+            "converterVersion": "0.1.0",
+            "historicalValidationBinding": "unsupported",
+            "outputVersion": "3.2.1",
+            "sourceQuery": "matches",
+            "sourceVersion": "1.0.3"
+          },
+          "recordedStatus": "converted",
+          "reviewRequired": false,
+          "source": {
+            "availability": "available",
+            "path": "Analytic Rules/ZscalerZPAUnexpectedSessionDuration.yaml",
+            "sha256": "e7c3744df9c4f074fac7d125483d5f1b25713dd6b845ea15306b955a290dbe1f"
+          }
+        }
+      ],
+      "itemsAvailability": "available",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/manifest.json",
+      "recordedStatus": "unknown",
+      "sha256": "a8308b8f68555af4843668e1320f712ef35e24542d2a3b2d3172946edf9911eb",
+      "verification": "recorded-only-not-attested"
+    },
+    "packaging": {
+      "artifacts": {
+        "createUiDefinition": {
+          "availability": "available",
+          "path": "Package/createUiDefinition.json",
+          "sha256": "9dff489431f4b7dcec312541d282353a2a64a0719b816e33e5eee4f8aac9ebfb"
+        },
+        "mainTemplate": {
+          "availability": "available",
+          "path": "Package/mainTemplate.json",
+          "sha256": "e29fbb353f3c580f22a291ebae505bc0b50252b583550e983c653f561f2132c7"
+        },
+        "solutionData": {
+          "availability": "available",
+          "path": "Data/Solution_Zscaler Private Access (ZPA).json",
+          "sha256": "2c9db60eb195385f7f7b03fcf6fc27cd179d79b0b4b4906deaf7c806c6fc8178"
+        },
+        "testParameters": {
+          "availability": "available",
+          "path": "Package/testParameters.json",
+          "sha256": "f2d102a2cb44a2e6d314c485783c938f0a835a85e6b9c6e3edd07d224e8ec8db"
+        },
+        "zip": {
+          "availability": "available",
+          "path": "Package/3.2.2.zip",
+          "sha256": "54f6c8c1447c26ebe4180488da3a1d4861bb02b9180027ae52f989a0df649d2f"
+        }
+      },
+      "availability": "available",
+      "counts": {
+        "xdrDetectionCount": 10
+      },
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "packager": "V3.1",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/packaging.v3_1.json",
+      "recordedStatus": "passed",
+      "sha256": "0b1bdeb5c0bd4768753ae2ad337caf6c2ff821efd92d57f82fb0719961e5df11",
+      "verification": "recorded-only-not-attested",
+      "version": "3.2.2",
+      "versionBump": "none",
+      "warningCount": 1
+    },
+    "queryParity": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/mock-query-parity.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    },
+    "runtimeAzureMonitorSdk": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/runtime-validation.azure-monitor-sdk.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    },
+    "runtimeGraph": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/runtime-validation.graph.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    },
+    "runtimeLogAnalytics": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/runtime-validation.log-analytics-cli.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    },
+    "runtimeTriage": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/runtime-validation.triage-mcp.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    },
+    "solutionReport": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/migration-report.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    },
+    "structural": {
+      "availability": "missing",
+      "counts": {},
+      "items": [],
+      "itemsAvailability": "missing-or-unsupported",
+      "path": "Logs/sentinel-xdr-migration/20261020T134312Z/structural-validation.json",
+      "recordedStatus": "unknown",
+      "sha256": null,
+      "verification": "recorded-only-not-attested"
+    }
+  },
+  "runId": "20261020T134312Z",
+  "schemaVersion": "1.0.0",
+  "solution": {
+    "currentVersion": "3.2.2",
+    "name": "Zscaler Private Access (ZPA)",
+    "nameAvailability": "available",
+    "nameSource": "solution-folder",
+    "requestedTargetVersion": null,
+    "requestedTargetVersionAvailability": "unsupported",
+    "versionAvailability": "available",
+    "versionObservation": "export",
+    "versionSources": [
+      {
+        "availability": "available",
+        "kind": "solution-metadata",
+        "sha256": "7de721f62d30d386b497c587553e0a711daa0a44e2fb3dc6afd466c9bb41d5b4",
+        "version": "3.2.2"
+      },
+      {
+        "availability": "available",
+        "kind": "solution-data",
+        "sha256": "2c9db60eb195385f7f7b03fcf6fc27cd179d79b0b4b4906deaf7c806c6fc8178",
+        "version": "3.2.2"
+      }
+    ]
+  },
+  "stages": {
+    "alertParity": {
+      "attempts": 0,
+      "details": "withheld",
+      "recordedStatus": "notRequired",
+      "runtimeStatus": "unknown"
+    },
+    "conversion": {
+      "attempts": 1,
+      "details": "not-recorded",
+      "recordedStatus": "passed",
+      "runtimeStatus": "unknown"
+    },
+    "deployment": {
+      "attempts": 0,
+      "details": "withheld",
+      "recordedStatus": "notRequired",
+      "runtimeStatus": "unknown"
+    },
+    "discovery": {
+      "attempts": 1,
+      "details": "not-recorded",
+      "recordedStatus": "passed",
+      "runtimeStatus": "unknown"
+    },
+    "mockIngestion": {
+      "attempts": 0,
+      "details": "withheld",
+      "recordedStatus": "notRequired",
+      "runtimeStatus": "unknown"
+    },
+    "packaging": {
+      "attempts": 1,
+      "details": "withheld",
+      "recordedStatus": "passed",
+      "runtimeStatus": "unknown"
+    },
+    "report": {
+      "attempts": 0,
+      "details": "not-recorded",
+      "recordedStatus": "pending",
+      "runtimeStatus": "unknown"
+    },
+    "validation": {
+      "attempts": 1,
+      "details": "withheld",
+      "recordedStatus": "passed",
+      "runtimeStatus": "not-run"
+    }
+  },
+  "verification": "recorded-only-not-attested",
+  "versionDecision": "none",
+  "workflowEvidence": {
+    "availability": "available",
+    "path": "Logs/sentinel-xdr-migration/20261020T134312Z/workflow-state.json",
+    "sha256": "30a0391a692a31e030f42d1327cafe0a876d4470b459622770b502c9961bc925"
+  }
+}
