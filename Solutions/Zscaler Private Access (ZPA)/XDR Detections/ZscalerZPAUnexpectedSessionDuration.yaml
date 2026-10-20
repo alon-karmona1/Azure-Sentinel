@@ -1,5 +1,5 @@
 schemaVersion: 1.0.0
-version: 3.2.1
+version: 3.1.0
 kind: CustomDetection
 resourceType: Microsoft.Security/detectionRules
 apiVersion: 2026-06-01-preview
@@ -23,7 +23,7 @@ contentProvenance:
     id: e07846e0-43ad-11ec-81d3-0242ac130003
     path: Analytic Rules/ZscalerZPAUnexpectedSessionDuration.yaml
     version: 1.0.3
-    querySha256: 743c032a51b7c1934ed51f0ef5e958f5bdf7021a3459f4cae557ae31d7bf0f84
+    querySha256: e9c07490dffd04e5bdf889e5d355f2958e1110486208dff8b3893694c2e7e433
     schedule:
       queryFrequency: 1h
       queryPeriod: 24h
@@ -36,7 +36,6 @@ contentProvenance:
     requiredWorkloads:
     - sentinel
     warnings:
-    - Renamed local parser binding ZPAEvent to __xdr_inline_ZPAEvent to avoid a saved parser collision
     - 'Schedule assessment: source frequency=1h, lookback=24h; target frequency=PT1H, native lookback=unknown/unconfigured;
       mixed, Sentinel-only, or unknown query surface; no custom lookback is configured in the payload. See https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules#lookback'
     - Unconfirmed generic Account.Name mapping was omitted because another required Host, Mailbox, or IP asset is available
@@ -53,8 +52,8 @@ contentProvenance:
     - T1078
     - T1133
     reviewScope:
-      sourceDocumentSha256: e04396857d636cb6191946327c2a7c7fa0131f4941e58c9be7368be2e9c0a412
-      targetQuerySha256: 2c94b2831dc494dd49872ac191bee65fff1642133a8682b40bc4d70166a9d910
+      sourceDocumentSha256: a045a43da84708ba3ef3569112538d173e224b410f53114ad82459944d253b4d
+      targetQuerySha256: 0c780ae76a1ba98cfd7dff1c5475de20d8e2c072e037ecf488c9873e803d5a43
     supplementalEntityDetails:
     - entityType: Account
       entityIndex: 1
@@ -69,29 +68,16 @@ properties:
   status: disabled
   queryCondition:
     queryText: |-
-      let __xdr_inline_ZPAEvent = () {
-      ZPA_CL
-      | extend EventVendor="Zscaler",
-              EventProduct="Private Access"
-      | parse-kv Message as (LogTimestamp:string, Customer:string, SessionID:string, ConnectionID:string, NetworkProtocol:string, DoubleEncryption:string, SrcIpAddr:string, SrcNatIpAddr:string, SrcGeoLatitude:string, SrcGeoLongitude:string, SrcGeoCountry:string, ClientZEN:string, NetworkRuleName:string, ConnectorZEN:string, ConnectorIP:string, ConnectorPort:string, SrcDvcHostname:string, Application:string, AppGroup:string, DstDomainHostname:string, DstIpAddr:string, PolicyProcessingTime:string, CAProcessingTime:string, ConnectorZENSetupTime:string, ConnectionSetupTime:string, ServerSetupTime:string, AppLearnTime:string, TimestampConnectionStart:string, TimestampConnectionEnd:string, TimestampCATx:string, TimestampCARx:string, TimestampAppLearnStart:string, TimestampZENFirstRxClient:string, TimestampZENFirstTxClient:string, TimestampZENLastRxClient:string, TimestampZENLastTxClient:string, TimestampConnectorZENSetupComplete:string, TimestampZENFirstRxConnector:string, TimestampZENFirstTxConnector:string, TimestampZENLastRxConnector:string, TimestampZENLastTxConnector:string, ZENBytesRxClient:string, ZENBytesTxClient:string, ZENTotalBytesRxConnector:string, ZENBytesRxConnector:string, ZENTotalBytesTxConnector:string, ZENBytesTxConnector:string, Idp:string, Version:string, ZEN:string, CertificateCN:string, PrivateIP:string, DvcIpAddr:string, Latitude:string, Longitude:string, CountryCode:string, TimestampAuthentication:string, TimestampUnAuthentication:string, DvcHostname:string, SrcDvcOs:string, DvcType:string, TrustedNetworks:string, TrustedNetworksNames:string, SAMLAttributes:string, PosturesHit:string, PosturesMiss:string, ZENLatitude:string, ZENLongitude:string, ZENCountryCode:string, SessionType:string, Connector:string, ConnectorGroup:string, CPUUtilization:string, MemUtilization:string, ServiceCount:string, InterfaceDefRoute:string, DefRouteGW:string, PrimaryDNSResolver:string, HostUpTime:string, ConnectorUpTime:string, NumOfInterfaces:string, BytesRxInterface:string, PacketsRxInterface:string, ErrorsRxInterface:string, DiscardsRxInterface:string, BytesTxInterface:string, PacketsTxInterface:string, ErrorsTxInterface:string, DiscardsTxInterface:string, ModifiedTime:string, CreationTime:string, ModifiedBy:string, RequestID:string, AuditOldValue:string, AuditNewValue:string, AuditOperationType:string, ObjectType:string, ObjectName:string, ObjectID:string, CustomerID:string, Exporter:string, TimestampRequestReceiveStart:string,  TimestampRequestReceiveHeaderFinish:string, TimestampRequestReceiveFinish:string, TimestampRequestTransmitStart:string, TimestampRequestTransmitFinish:string, TimestampResponseReceiveStart:string, TimestampResponseReceiveFinish:string, TimestampResponseTransmitStart:string, TimestampResponseTransmitFinish:string, TotalTimeRequestReceive:string, TotalTimeRequestTransmit:string, TotalTimeResponseReceive:string, TotalTimeResponseTransmit:string, TotalTimeConnectionSetup:string, TotalTimeServerResponse:string, HttpRequestMethod:string, NetworkApplicationProtocol:string, UrlHostname:string, UrlOriginal:string, HttpUserAgentOriginal:string, HttpRequestXff:string, NameID:string, HttpStatusCode:string, HttpRequestBodyBytes:string, HttpResponseBodyBytes:string, SrcPortNumber:string, EventResultDetails:string, CorsToken:string, Origin:string, InternalReason:string, ConnectionStatus:string,  SessionStatus:string, Username:string, User:string, ServicePort:string, ServerPort:string, ApplicationPort:string, ZENTotalBytesRxClient:string, TotalBytesRx:string, ZENTotalBytesTxClient:string, TotalBytesTx:string, IPProtocol:double, ClientCountryCode:string, ClientLatitude:string, ClientLongitude:string, ClientPublicIP:string, ClientPrivateIP:string, Policy:string, Host:string, Server:string, ServerIP:string, ClientCity:string, MicroTenantID:string, AppMicroTenantID:string, Platform:string, Hostname:string, NetworkSessionId:string, ) with (pair_delimiter=',', kv_delimiter=':', quote='"')
-      | extend
-              EventResult=column_ifexists('InternalReason', column_ifexists('ConnectionStatus', '')),
-              DvcAction=column_ifexists('ConnectionStatus', column_ifexists('SessionStatus', '')),
-              DstUserName=column_ifexists('Username', column_ifexists('User', '')),
-              DstPortNumber=column_ifexists('ServicePort', column_ifexists('ServerPort', column_ifexists('ApplicationPort', ''))),
-              SrcBytes=column_ifexists('ZENTotalBytesRxClient', column_ifexists('TotalBytesRx', '')),
-              DstBytes=column_ifexists('ZENTotalBytesTxClient', column_ifexists('TotalBytesTx', ''))
-      };
       let dt_lookBack = 24h;
       let time_treshhold = timespan(08:00:00);
       let open_sessions =
-      __xdr_inline_ZPAEvent
+      ZPAEvent
       | where TimeGenerated > ago(dt_lookBack)
       | where DvcAction == 'open'
       | summarize timestampstart = min(TimeGenerated) by DstUserName, SrcIpAddr, ConnectionID
       | sort by timestampstart asc;
       let closed_sessions =
-      __xdr_inline_ZPAEvent
+      ZPAEvent
       | where TimeGenerated > ago(dt_lookBack)
       | where DvcAction == 'close'
       | summarize timestampend = max(TimeGenerated) by DstUserName, SrcIpAddr, ConnectionID

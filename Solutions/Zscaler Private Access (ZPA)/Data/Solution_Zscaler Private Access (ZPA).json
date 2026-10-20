@@ -38,8 +38,7 @@
   ],
   "Metadata": "SolutionMetadata.json",
   "BasePath": "C:\\GitHub\\Azure-Sentinel\\Solutions\\Zscaler Private Access (ZPA)",
-  "Version": "3.2.2",
-  "TemplateSpec": false,
+  "TemplateSpec": true,
   "XDR Detections": [
     "XDR Detections/ZscalerSharedZPASession.yaml",
     "XDR Detections/ZscalerUnexpectedCountEventResult.yaml",
@@ -52,7 +51,6 @@
     "XDR Detections/ZscalerZPAConnectionsOutsideOperationalHours.yaml",
     "XDR Detections/ZscalerZPAUnexpectedSessionDuration.yaml"
   ],
-  "XDR Workbooks": [
-    "XDR Workbooks/ZscalerZPA.json"
-  ]
+  "XDR Workbooks": [],
+  "Version": "3.2.2"
 }

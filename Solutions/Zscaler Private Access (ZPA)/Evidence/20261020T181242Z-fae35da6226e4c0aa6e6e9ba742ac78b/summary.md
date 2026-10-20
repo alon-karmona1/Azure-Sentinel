@@ -1,13 +1,13 @@
 # Migration evidence — Zscaler Private Access (ZPA)
 
 Solution: **Zscaler Private Access (ZPA)**
-Run: `20261020T134312Z`
+Run: `20261020T181242Z-fae35da6226e4c0aa6e6e9ba742ac78b`
 Profile: **authoring**
-Recorded workflow status: **inProgress**
+Recorded workflow status: **blocked**
 Current solution version at export: **3.2.2** (not a packaging claim)
 Requested version action: **none**
 Requested target solution version: **unknown (not recorded)** (not a packaged version)
-Evidence exported at (UTC): **2026-10-20T14:36:18.326540+00:00**
+Evidence exported at (UTC): **2026-10-20T18:24:26.166656+00:00**
 Evidence exporter: **sentinel-xdr-migration 0.1.0** (export tool, not historical run version)
 Exporter Python: **3.12.12**
 
@@ -22,7 +22,7 @@ Content hashes describe export-time bytes, not proof of what historical tests ra
 | discovery | passed | 1 |
 | conversion | passed | 1 |
 | validation | passed | 1 |
-| packaging | passed | 1 |
+| packaging | blocked | 3 |
 | deployment | notRequired | 0 |
 | mockIngestion | notRequired | 0 |
 | alertParity | notRequired | 0 |
@@ -33,7 +33,7 @@ Content hashes describe export-time bytes, not proof of what historical tests ra
 | Report | Availability | Recorded status | Items | Recorded item outcomes |
 | --- | --- | --- | --- | --- |
 | conversion | available | unknown | 10 | converted=10 |
-| structural | missing | unknown | 0 | not-recorded |
+| structural | available | unknown | 10 | passed=10 |
 | runtimeGraph | missing | unknown | 0 | not-recorded |
 | runtimeTriage | missing | unknown | 0 | not-recorded |
 | runtimeLogAnalytics | missing | unknown | 0 | not-recorded |
