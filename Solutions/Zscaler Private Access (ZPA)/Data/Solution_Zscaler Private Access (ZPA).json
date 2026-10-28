@@ -51,6 +51,8 @@
     "XDR Detections/ZscalerZPAConnectionsOutsideOperationalHours.yaml",
     "XDR Detections/ZscalerZPAUnexpectedSessionDuration.yaml"
   ],
-  "XDR Workbooks": [],
+  "XDR Workbooks": [
+    "XDR Workbooks/ZscalerZPA.json"
+  ],
   "Version": "3.2.2"
 }
