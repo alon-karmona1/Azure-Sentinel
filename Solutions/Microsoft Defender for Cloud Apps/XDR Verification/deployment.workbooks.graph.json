@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-11-16T15:26:04.552125+00:00",
+  "solution": ".",
+  "endpoint": "https://graph.microsoft.com/beta/security/workbooks",
+  "status": "passed",
+  "deployed": 1,
+  "failed": 0,
+  "readbackReconciliation": {
+    "status": "passed",
+    "httpMethod": "GET",
+    "readbackVerified": true
+  },
+  "results": [
+    {
+      "file": "XDR Workbooks/MicrosoftCloudAppSecurity.json",
+      "id": "36fda75e-ee17-5eca-aa7f-c82df4494c0d",
+      "contentId": "1627240b-1542-5b7b-8dd3-1b77b712b5f5",
+      "displayName": "Microsoft Cloud App Security - discovery logs",
+      "portalUrl": "https://security.microsoft.com/workbook/36fda75e-ee17-5eca-aa7f-c82df4494c0d?tid=0e8e91c3-dec0-4634-a473-1254c3bce737",
+      "operation": "updated",
+      "statusCode": 200,
+      "success": true,
+      "readbackVerified": true,
+      "contentProvenanceVerified": true,
+      "error": null
+    }
+  ],
+  "reportPath": "Logs/sentinel-xdr-migration/20261116T151155Z-faa44739df784a4eaa31f3cfcd6e2363/deployment.workbooks.graph.json"
+}

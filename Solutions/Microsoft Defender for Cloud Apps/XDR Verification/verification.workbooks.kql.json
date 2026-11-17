@@ -1,0 +1,98 @@
+{
+  "workbook": "XDR Workbooks/MicrosoftCloudAppSecurity.json",
+  "tenantId": "0e8e91c3-dec0-4634-a473-1254c3bce737",
+  "totalQueries": 11,
+  "passed": 11,
+  "failed": 0,
+  "status": "passed",
+  "queries": [
+    {
+      "itemId": "parameter:Score",
+      "title": "Score",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 1,
+      "error": null
+    },
+    {
+      "itemId": "parameter:Tags",
+      "title": "Tags",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    },
+    {
+      "itemId": "parameter:DataStream",
+      "title": "DataStream",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 1,
+      "error": null
+    },
+    {
+      "itemId": "query - 5",
+      "title": "10 Latest Discovery Alerts",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 8,
+      "error": null
+    },
+    {
+      "itemId": "query - 7",
+      "title": "Alerts Details ",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    },
+    {
+      "itemId": "query - 8",
+      "title": "Alerts Trend by Alert Name",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    },
+    {
+      "itemId": "query - 2",
+      "title": "Top 10 Application Categories by Network Traffic (MB)",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    },
+    {
+      "itemId": "query - 1",
+      "title": "User Traffic (MB)",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    },
+    {
+      "itemId": "query - 3",
+      "title": "Application Score Distribution",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    },
+    {
+      "itemId": "query - 4",
+      "title": "Usage Trend",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    },
+    {
+      "itemId": "query - 6",
+      "title": "Discovery Logs by Score",
+      "status": "passed",
+      "statusCode": 200,
+      "rowCount": 0,
+      "error": null
+    }
+  ]
+}

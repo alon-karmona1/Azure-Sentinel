@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "playwrightVerified": true,
+  "workbooks": [
+    {
+      "workbook": "XDR Workbooks/MicrosoftCloudAppSecurity.json",
+      "status": "passed",
+      "playwrightVerified": true,
+      "tilesRendered": true,
+      "checkedKinds": [
+        "conditional",
+        "open",
+        "parameters",
+        "tabs",
+        "tiles"
+      ],
+      "missingKinds": [],
+      "saveEditObserved": false,
+      "queryErrors": [],
+      "javascriptErrors": [],
+      "displayName": "Microsoft Cloud App Security - discovery logs",
+      "instanceId": "36fda75e-ee17-5eca-aa7f-c82df4494c0d",
+      "portalUrl": "https://security.microsoft.com/workbook/36fda75e-ee17-5eca-aa7f-c82df4494c0d",
+      "tempScreenshotPath": "C:\\Users\\alonkarmona\\.sentinel-xdr-migration\\tmp\\workbook-screenshots\\Microsoft Defender for Cloud Apps-MicrosoftCloudAppSecurity.png",
+      "hasData": true,
+      "noDataPanelCount": 5,
+      "tabsChecked": []
+    }
+  ],
+  "reasons": []
+}
